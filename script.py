@@ -39,13 +39,13 @@ async def parsing_response(json_data: dict, list_review: list, product_id: int, 
             time_minus = timedelta(days=30)
         case 'За 3 месяца':
             time_minus = timedelta(days=90)
-        case 'За 1 часа':
+        case 'За 1 час':
             time_minus = timedelta(hours=1)
         case 'За 2 часа':
             time_minus = timedelta(hours=2)
-        case 'За 6 часа':
+        case 'За 6 часов':
             time_minus = timedelta(hours=6)
-        case 'За 12 часа':
+        case 'За 12 часов':
             time_minus = timedelta(hours=12)
     new_date = moscow_time - time_minus
     list_negative_feedback = [
