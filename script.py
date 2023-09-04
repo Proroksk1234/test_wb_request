@@ -47,7 +47,7 @@ async def parsing_response(json_data: dict, list_review: list, product_id: int, 
             time_minus = timedelta(hours=6)
         case 'За 12 часов':
             time_minus = timedelta(hours=12)
-    new_date = moscow_time - time_minus
+    new_date = moscow_time - time_minus - timedelta(hours=3)
     list_negative_feedback = [
         {
             'user_id': x['globalUserId'],
